@@ -1,8 +1,8 @@
-<!-- ### Live Link: https://digital-cow-hut-backend-swart.vercel.app/api/v1/users -->
+
 
 # Digital Cow Hut Backend
 
-### Create Private Repo with this [Live Link](https://digital-cow-hut-backend-swart.vercel.app/api/v1/users)
+###  [Project Live Link](https://digital-cow-hut-backend-swart.vercel.app/api/v1/users)
 
 <hr>
 
@@ -23,7 +23,7 @@ The project has been developed the backend for an Online Cow Selling platform fo
 Implement proper error handling throughout the application.
 Use global error handling `middleware` to catch and handle errors, providing appropriate error responses with status codes and error messages.
 
-Error Response Object Should include the following properties:
+Error Response Object included the following properties:
 - success  →  false
 - message → Error Type → Validation Error, Cast Error, Duplicate Entry
 - errorMessages 
@@ -433,21 +433,21 @@ Request body:
 
 Response: The  newly created order object.
 
-Implementation a transactional operation for buying a cow.  When a user requests to buy a cow, simulated a `transaction` process without involving an actual payment gateway. Upon successful transaction simulation, updated the cow's status as sold, transfer money from buyer to seller account, and provide appropriate response messages.
+Implementation a transactional operation for buying a cow.  When a user requests to buy a cow, simulated a `transaction` process without involving an actual payment gateway. Upon successful transaction simulation, updated the cow's status as sold, transfer money from buyer to seller account, and provided appropriate response messages.
 
 Steps:
 
 - The user initiates a purchase order using the "api/v1/orders" POST API.
-- Check that the user has enough money in their account to buy the cow.
-- If the user needs more money, show an error message.
-- If the user has enough money, begin the buying process (start a transaction). This involves a few steps:
-- Change the cow's label from 'for sale' to 'sold out'.
+- System will Check the user has enough money in their account to buy the cow.
+- If the user needs more money, would show an error message.
+- If the user has enough money, begin the buying process (would start a transaction). This involves a few steps:
+- WIll Change the cow's label from 'for sale' to 'sold out'.
 - Deduct the cost of the cow from the buyer's budget
 - Put the same amount of  cost into the seller's income
 - Make an entry in the orders collection
 - Commit transaction
 - End transaction session
-- If any error happens abort the transaction 
+- If any error happens abort the transaction
 
 
 
@@ -468,11 +468,13 @@ Response Sample Pattern:
   }
 ```
 
-### Duration of the project development: 4 days
+### Duration of the project development: 
+4 days
 
 
   ### Live Link: https://digital-cow-hut-backend-swart.vercel.app/api/v1/users
-  ### Application Routes:
+  ### Application Routes
+  All the application routes are available in this project included below
 
    #### User
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/auth/signup -post
@@ -502,46 +504,3 @@ Response Sample Pattern:
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/orders (GET)
 
 
-<!-- ### Application Routes
-
-##### User
-
-POST- https://digital-cow-hut-backend-swart.vercel.app/api/v1/auth/signup
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/users
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4 (Single GET) Include an id that is saved in your database
-
-PATCH https://digital-cow-hut-backend-swart.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4 (Include an id that is saved in your database)
-
-DELETE https://digital-cow-hut-backend-swart.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4 (Include an id that is saved in your database) -->
-
-<!-- ##### Cows
-
-POST https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows/6177a5b87d32123f08d2f5d4 (Single GET) Include an id that is saved in your database
-
-PATCH https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows/6177a5b87d32123f08d2f5d4 (Include an id that is saved in your database)
-
-DELETE https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows/6177a5b87d32123f08d2f5d4 (Include an id that is saved in your database) -->
-
-<!-- ##### Pagination and Filtering routes of Cows
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows?pag=1&limit=10
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows?sortBy=price&sortOrder=asc
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows?location=Chattogram
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows?searchTerm=Cha -->
-<!-- 
-##### Orders
-
-POST https://digital-cow-hut-backend-swart.vercel.app/api/v1/orders
-
-GET https://digital-cow-hut-backend-swart.vercel.app/api/v1/orders
-
-Please note that the routes above represent the endpoints available in the application. -->
