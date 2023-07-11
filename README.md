@@ -479,7 +479,7 @@ Response Sample Pattern:
    #### User
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/auth/signup -post
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/users (GET)
-   - https://digital-cow-hut-backend-swart.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4 (Single GET) Included an id that is saved in database
+   - https://digital-cow-hut-backend-swart.vercel.app/api/v1/users/64ab4f81002a381a892f0a61 (Single GET) Included an id that is saved in database
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4 (PATCH) (Include id that is saved in database)
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/users/6177a5b87d32123f08d2f5d4 (DELETE) Included an id that is saved in database
 
@@ -487,8 +487,8 @@ Response Sample Pattern:
    #### Cows
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows (POST)
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows (GET)
-   - https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows/6177a5b87d32123f08d2f5d4 (Single GET) Included id that is saved in database
-   - https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows/6177a5b87d32123f08d2f5d4 (PATCH) Included an id that is saved in your database
+   - https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows/64ab505a06a1d8953225fec4 (Single GET) Included id that is saved in database
+   - https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows/64ab505a06a1d8953225fec4 (PATCH) Included an id that is saved in your database
    - https://digital-cow-hut-backend-swart.vercel.app/api/v1/cows/6177a5b87d32123f08d2f5d4 (DELETE) Included an id that is saved in your database
 
    ### Pagination and Filtering routes of Cows
